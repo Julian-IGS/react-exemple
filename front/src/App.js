@@ -10,7 +10,7 @@ function App() {
   const [pokemon, setPokemon] = useState(null)
 
   useEffect(() => {
-    const backendServiceUrl = "http://localhost:5000"
+    const backendServiceUrl = "http://mon-backend-service:5000"
     fetch(`${backendServiceUrl}/api/pokemon`)
         .then(response => response.json())
         .then(data => setPokemon(data) )
